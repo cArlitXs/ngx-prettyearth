@@ -6,6 +6,22 @@ Component to show random picture from Google Earth Image Gallery.
 
 ---
 
+## Preinstall
+
+This component depends on [`apisauce`](https://github.com/infinitered/apisauce).
+
+```
+npm i apisauce
+```
+
+o
+
+```
+yarn add apisauce
+```
+
+---
+
 ## Install
 
 ```
@@ -44,7 +60,11 @@ imports: [..., NgxPrettyearthModule],
 o
 
 ```html
-<ngx-prettyearth [interval]="1000" (change)="onChange($event)">
+<ngx-prettyearth
+  [classes]="['class']"
+  [interval]="1000"
+  (change)="onChange($event)"
+>
 </ngx-prettyearth>
 ```
 
@@ -69,6 +89,7 @@ o
 | Name          | Type                         | Description                                          |
 | ------------- | ---------------------------- | ---------------------------------------------------- |
 | `prettyearth` | `Observable<IPrettyearth>`   | Object where the information is stored               |
+| `classes`     | `Array<string>`              | Similar to `ngClass` to `<ng-content>` tag           |
 | `interval`    | `number`                     | Time interval to save a random image in milliseconds |
 | `change`      | `EventEmitter<IPrettyearth>` | Capture the change of the `prettyearth` variable     |
 
@@ -102,6 +123,12 @@ constructor(private prettyearthService: NgxPrettyearthService) {
     );
 }
 ```
+
+---
+
+## Support
+
+You can help me 😊 [Issues](https://github.com/cArlitXs/ngx-prettyearth/issues).
 
 ---
 
