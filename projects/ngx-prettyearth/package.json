@@ -1,6 +1,6 @@
 {
   "name": "ngx-prettyearth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Component to show random picture from Google Earth Image Gallery.",
   "keywords": [
     "google earth",
