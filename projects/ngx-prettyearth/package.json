@@ -8,6 +8,17 @@
     "gallery",
     "earth"
   ],
+  "homepage": "https://github.com/cArlitXs/ngx-prettyearth",
+  "bugs": {
+    "url": "https://github.com/cArlitXs/ngx-prettyearth/issues",
+    "email": "carlitosalvarezlinares@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Carlos Alvarez L.",
+    "email": "carlitosalvarezlinares@gmail.com",
+    "url": "https://github.com/cArlitXs"
+  },
   "peerDependencies": {
     "@angular/common": "^13.1.0",
     "@angular/core": "^13.1.0",
