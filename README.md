@@ -38,7 +38,7 @@ yarn add ngx-prettyearth
 
 ## Import
 
-Add `NgxPrettyearthModule` in your imports
+Add `NgxPrettyearthModule` in import of `app.module.ts`
 
 ```typescript
 import { NgxPrettyearthModule } from 'ngx-prettyearth';
@@ -65,6 +65,8 @@ o
   [interval]="1000"
   (change)="onChange($event)"
 >
+  <h4>{{ prettyearth?.region }}</h4>
+  <h2>{{ prettyearth?.country }}</h2>
 </ngx-prettyearth>
 ```
 

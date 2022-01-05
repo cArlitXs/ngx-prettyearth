@@ -4,7 +4,11 @@ import { IPrettyearth } from 'projects/ngx-prettyearth/src/public-api';
 @Component({
   selector: 'app-root',
   template: `
-    <ngx-prettyearth [interval]="3000" (change)="onChange($event)">
+    <ngx-prettyearth
+      [classes]="['class']"
+      [interval]="3000"
+      (change)="onChange($event)"
+    >
       <h4>{{ prettyearth?.region }}</h4>
       <h2>{{ prettyearth?.country }}</h2>
     </ngx-prettyearth>
