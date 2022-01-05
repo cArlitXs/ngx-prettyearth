@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxPrettyearthModule } from 'ngx-prettyearth';
+import { NgxPrettyearthModule } from 'projects/ngx-prettyearth/src/public-api';
 
 import { AppComponent } from './app.component';
 

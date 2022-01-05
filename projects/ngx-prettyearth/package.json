@@ -11,20 +11,20 @@
   "homepage": "https://github.com/cArlitXs/ngx-prettyearth",
   "bugs": {
     "url": "https://github.com/cArlitXs/ngx-prettyearth/issues",
-    "email": "carlitosalvarezlinares@gmail.com"
+    "email": "carlos.alvarez.dev@gmail.com"
   },
   "license": "MIT",
   "author": {
     "name": "Carlos Alvarez L.",
-    "email": "carlitosalvarezlinares@gmail.com",
+    "email": "carlos.alvarez.dev@gmail.com",
     "url": "https://github.com/cArlitXs"
   },
   "peerDependencies": {
     "@angular/common": "^13.1.0",
-    "@angular/core": "^13.1.0",
-    "apisauce": "^2.1.5"
+    "@angular/core": "^13.1.0"
   },
   "dependencies": {
+    "apisauce": "^2.1.5",
     "tslib": "^2.3.0"
   }
 }
