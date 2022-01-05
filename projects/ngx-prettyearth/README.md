@@ -6,6 +6,12 @@ Component to show random picture from Google Earth Image Gallery.
 
 ---
 
+## Demo
+
+See demo [here](https://carlitxs.github.io/ngx-prettyearth/prettyearth/)
+
+---
+
 ## Preinstall
 
 This component depends on [`apisauce`](https://github.com/infinitered/apisauce).
