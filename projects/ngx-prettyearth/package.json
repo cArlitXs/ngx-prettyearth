@@ -1,0 +1,19 @@
+{
+  "name": "ngx-prettyearth",
+  "version": "0.0.1",
+  "description": "Component to show random picture from Google Earth Image Gallery.",
+  "keywords": [
+    "google earth",
+    "image",
+    "gallery",
+    "earth"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^13.1.0",
+    "@angular/core": "^13.1.0",
+    "apisauce": "^2.1.5"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
