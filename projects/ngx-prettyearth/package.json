@@ -21,10 +21,10 @@
   },
   "peerDependencies": {
     "@angular/common": "^13.1.0",
-    "@angular/core": "^13.1.0"
+    "@angular/core": "^13.1.0",
+    "apisauce": "^2.1.5"
   },
   "dependencies": {
-    "apisauce": "^2.1.5",
     "tslib": "^2.3.0"
   }
 }

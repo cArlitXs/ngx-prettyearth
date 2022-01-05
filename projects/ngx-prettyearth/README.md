@@ -6,6 +6,22 @@ Component to show random picture from Google Earth Image Gallery.
 
 ---
 
+## Preinstall
+
+This component depends on [`apisauce`](https://github.com/infinitered/apisauce).
+
+```
+npm i apisauce
+```
+
+o
+
+```
+yarn add apisauce
+```
+
+---
+
 ## Install
 
 ```
@@ -107,6 +123,12 @@ constructor(private prettyearthService: NgxPrettyearthService) {
     );
 }
 ```
+
+---
+
+## Support
+
+You can help me 😊 [Issues](https://github.com/cArlitXs/ngx-prettyearth/issues).
 
 ---
 
