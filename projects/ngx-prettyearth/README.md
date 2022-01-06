@@ -6,6 +6,23 @@ Component to show random picture from Google Earth Image Gallery.
 
 ---
 
+## Contents
+
+- [Demo](#demo)
+- [Preinstall](#preinstall)
+- [Install](#install)
+- [Import](#import)
+- [Use](#use)
+  - [HTML Component](#html-component)
+  - [TS Component](#ts-component)
+- [Variables](#variables)
+- [Interfaces](#interfaces)
+- [Services](#services)
+- [Support](#support)
+- [License](#license)
+
+---
+
 ## Demo
 
 See demo [here](https://carlitxs.github.io/ngx-prettyearth/prettyearth/)
