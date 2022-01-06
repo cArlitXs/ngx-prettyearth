@@ -1,0 +1,53 @@
+{
+  "name": "ngx-prettyearth",
+  "version": "0.0.3",
+  "description": "Component to show random picture from Google Earth Image Gallery.",
+  "keywords": [
+    "google earth",
+    "image",
+    "gallery",
+    "earth",
+    "angular",
+    "ngx",
+    "frontend"
+  ],
+  "homepage": "https://github.com/cArlitXs/ngx-prettyearth",
+  "bugs": {
+    "url": "https://github.com/cArlitXs/ngx-prettyearth/issues",
+    "email": "carlos.alvarez.dev@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Carlos Alvarez L.",
+    "email": "carlos.alvarez.dev@gmail.com",
+    "url": "https://github.com/cArlitXs"
+  },
+  "peerDependencies": {
+    "@angular/common": "^13.1.0",
+    "@angular/core": "^13.1.0",
+    "apisauce": "^2.1.5"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/ngx-prettyearth.mjs",
+  "es2020": "fesm2020/ngx-prettyearth.mjs",
+  "esm2020": "esm2020/ngx-prettyearth.mjs",
+  "fesm2020": "fesm2020/ngx-prettyearth.mjs",
+  "fesm2015": "fesm2015/ngx-prettyearth.mjs",
+  "typings": "ngx-prettyearth.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./ngx-prettyearth.d.ts",
+      "esm2020": "./esm2020/ngx-prettyearth.mjs",
+      "es2020": "./fesm2020/ngx-prettyearth.mjs",
+      "es2015": "./fesm2015/ngx-prettyearth.mjs",
+      "node": "./fesm2015/ngx-prettyearth.mjs",
+      "default": "./fesm2020/ngx-prettyearth.mjs"
+    }
+  },
+  "sideEffects": false
+}
