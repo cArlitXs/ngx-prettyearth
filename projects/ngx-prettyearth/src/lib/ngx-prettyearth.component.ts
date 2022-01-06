@@ -29,9 +29,7 @@ import { IPrettyearth, NgxPrettyearthService } from './ngx-prettyearth.service';
         />
       </picture>
     </div>
-    <div [ngClass]="classes ? classes : 'content'">
-      <ng-content></ng-content>
-    </div>
+    <ng-content></ng-content>
   `,
   styles: [
     `
@@ -53,17 +51,6 @@ import { IPrettyearth, NgxPrettyearthService } from './ngx-prettyearth.service';
         border-style: none;
         object-fit: cover;
       }
-      .content {
-        position: absolute;
-        display: inline-block;
-        font-family: Arial, sans-serif;
-        bottom: 1em;
-        right: 1em;
-        color: white;
-        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-        text-align: right;
-        z-index: 1;
-      }
     `,
   ],
 })
@@ -71,7 +58,6 @@ export class NgxPrettyearthComponent implements OnInit, OnDestroy {
   public prettyearth!: BehaviorSubject<IPrettyearth>;
 
   @Input() public interval: number | undefined;
-  @Input() public classes!: Array<string>;
   @Output() public change: EventEmitter<IPrettyearth> = new EventEmitter();
 
   constructor(private prettyearthService: NgxPrettyearthService) {
