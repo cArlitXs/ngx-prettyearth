@@ -1,4 +1,4 @@
-# ngx-prettyearth
+# ngx-prettyearth [![version](https://img.shields.io/npm/v/ngx-prettyearth?style=flat-square)](https://www.npmjs.com/package/ngx-prettyearth)
 
 Component to show random picture from Google Earth Image Gallery.
 
@@ -84,8 +84,10 @@ o
 
 ```html
 <ngx-prettyearth [interval]="1000" (change)="onChange($event)">
-  <h4>{{ prettyearth?.region }}</h4>
-  <h2>{{ prettyearth?.country }}</h2>
+  <div class="content">
+    <h4>{{ prettyearth?.region }}</h4>
+    <h2>{{ prettyearth?.country }}</h2>
+  </div>
 </ngx-prettyearth>
 ```
 
