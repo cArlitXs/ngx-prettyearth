@@ -85,6 +85,14 @@ export class NgxPrettyearthService {
   }
 
   /**
+   * To stop the interval
+   */
+  public stopInterval() {
+    this.subscription?.unsubscribe();
+    this.timeInterval = undefined;
+  }
+
+  /**
    * Returns a random integer between min (included) and max (excluded)
    * @param {number} min
    * @param {number} max
