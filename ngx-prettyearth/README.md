@@ -1,8 +1,28 @@
-# ngx-prettyearth
+# ngx-prettyearth [![version](https://img.shields.io/npm/v/ngx-prettyearth?style=flat-square)](https://www.npmjs.com/package/ngx-prettyearth)
 
 Component to show random picture from Google Earth Image Gallery.
 
 > Angular component inspired by [EarthView](https://github.com/limhenry/earthview) & [PrettyEarth](https://github.com/evertdespiegeleer/PrettyEarth).
+
+---
+
+## Contents
+
+- [Demo](#demo)
+- [Preinstall](#preinstall)
+- [Install](#install)
+- [Import](#import)
+- [Use](#use)
+  - [HTML Component](#html-component)
+  - [TS Component](#ts-component)
+- [Variables](#variables)
+- [Services](#services)
+- [Methods](#methods)
+  - [Service](#service)
+  - [Component](#component)
+- [Interfaces](#interfaces)
+- [Support](#support)
+- [License](#license)
 
 ---
 
@@ -67,8 +87,10 @@ o
 
 ```html
 <ngx-prettyearth [interval]="1000" (change)="onChange($event)">
-  <h4>{{ prettyearth?.region }}</h4>
-  <h2>{{ prettyearth?.country }}</h2>
+  <div class="content">
+    <h4>{{ prettyearth?.region }}</h4>
+    <h2>{{ prettyearth?.country }}</h2>
+  </div>
 </ngx-prettyearth>
 ```
 
@@ -98,19 +120,6 @@ o
 
 ---
 
-## Interfaces
-
-```typescript
-interface IPrettyearth {
-  country: string;
-  image: string;
-  map: string;
-  region: string;
-}
-```
-
----
-
 ## Services
 
 If you don't want to use the component and want to build your own component you can use the service by subscribing to it.
@@ -124,6 +133,47 @@ constructor(private prettyearthService: NgxPrettyearthService) {
           ...
       }
     );
+}
+```
+
+---
+
+## Methods
+
+### Service
+
+#### `async call()`
+
+Async method to set image in `localStorage` & `prettyearth`.
+
+#### `destroy()`
+
+Delete all subscriptions from service & remove image from `localStorage`.
+
+#### `setInterval(interval: number)`
+
+Interval to set random image.
+
+#### `stopInterval()`
+
+Destroy a interval subscription.
+
+### Component
+
+#### `getRandomPic()`
+
+Similar to `call()` method.
+
+---
+
+## Interfaces
+
+```typescript
+interface IPrettyearth {
+  country: string;
+  image: string;
+  map: string;
+  region: string;
 }
 ```
 

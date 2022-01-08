@@ -13,9 +13,9 @@ export declare class NgxPrettyearthService {
     private timeInterval;
     private subscription;
     constructor();
-    init(): Promise<void>;
+    private init;
     /**
-     * Call this fun to set `prettyearth`.
+     * Call this func to set `prettyearth`.
      */
     call(): Promise<void>;
     /**
@@ -28,6 +28,10 @@ export declare class NgxPrettyearthService {
      * @default 1000 ms
      */
     setInterval(timeInterval?: number): void;
+    /**
+     * To stop the interval
+     */
+    stopInterval(): void;
     /**
      * Returns a random integer between min (included) and max (excluded)
      * @param {number} min

@@ -26,7 +26,7 @@ class NgxPrettyearthService {
         });
     }
     /**
-     * Call this fun to set `prettyearth`.
+     * Call this func to set `prettyearth`.
      */
     call() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -67,6 +67,14 @@ class NgxPrettyearthService {
         else {
             console.error('ERROR: Interval must be greater than or equal to 1000 milliseconds');
         }
+    }
+    /**
+     * To stop the interval
+     */
+    stopInterval() {
+        var _a;
+        (_a = this.subscription) === null || _a === void 0 ? void 0 : _a.unsubscribe();
+        this.timeInterval = undefined;
     }
     /**
      * Returns a random integer between min (included) and max (excluded)

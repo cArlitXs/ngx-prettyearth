@@ -23,7 +23,7 @@ class NgxPrettyearthService {
             await this.call();
     }
     /**
-     * Call this fun to set `prettyearth`.
+     * Call this func to set `prettyearth`.
      */
     async call() {
         const { ok, data, problem, originalError } = await this.api.get('');
@@ -60,6 +60,13 @@ class NgxPrettyearthService {
         else {
             console.error('ERROR: Interval must be greater than or equal to 1000 milliseconds');
         }
+    }
+    /**
+     * To stop the interval
+     */
+    stopInterval() {
+        this.subscription?.unsubscribe();
+        this.timeInterval = undefined;
     }
     /**
      * Returns a random integer between min (included) and max (excluded)
