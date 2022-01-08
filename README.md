@@ -16,8 +16,11 @@ Component to show random picture from Google Earth Image Gallery.
   - [HTML Component](#html-component)
   - [TS Component](#ts-component)
 - [Variables](#variables)
-- [Interfaces](#interfaces)
 - [Services](#services)
+- [Methods](#methods)
+  - [Service](#service)
+  - [Component](#component)
+- [Interfaces](#interfaces)
 - [Support](#support)
 - [License](#license)
 
@@ -117,19 +120,6 @@ o
 
 ---
 
-## Interfaces
-
-```typescript
-interface IPrettyearth {
-  country: string;
-  image: string;
-  map: string;
-  region: string;
-}
-```
-
----
-
 ## Services
 
 If you don't want to use the component and want to build your own component you can use the service by subscribing to it.
@@ -143,6 +133,47 @@ constructor(private prettyearthService: NgxPrettyearthService) {
           ...
       }
     );
+}
+```
+
+---
+
+## Methods
+
+### Service
+
+#### `async call()`
+
+Async method to set image in `localStorage` & `prettyearth`.
+
+#### `destroy()`
+
+Delete all subscriptions from service & remove image from `localStorage`.
+
+#### `setInterval(interval: number)`
+
+Interval to set random image.
+
+#### `stopInterval()`
+
+Destroy a interval subscription.
+
+### Component
+
+#### `getRandomPic()`
+
+Similar to `call()` method.
+
+---
+
+## Interfaces
+
+```typescript
+interface IPrettyearth {
+  country: string;
+  image: string;
+  map: string;
+  region: string;
 }
 ```
 

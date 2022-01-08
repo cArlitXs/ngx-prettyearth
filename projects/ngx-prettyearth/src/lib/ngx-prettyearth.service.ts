@@ -29,7 +29,7 @@ export class NgxPrettyearthService {
     this.init();
   }
 
-  public async init(): Promise<void> {
+  private async init(): Promise<void> {
     const item: IPrettyearth = JSON.parse(
       localStorage.getItem(this.key) as string
     ) as IPrettyearth;
@@ -41,7 +41,7 @@ export class NgxPrettyearthService {
   }
 
   /**
-   * Call this fun to set `prettyearth`.
+   * Call this func to set `prettyearth`.
    */
   public async call(): Promise<void> {
     const { ok, data, problem, originalError } = await this.api.get('');
@@ -87,7 +87,7 @@ export class NgxPrettyearthService {
   /**
    * To stop the interval
    */
-  public stopInterval() {
+  public stopInterval(): void {
     this.subscription?.unsubscribe();
     this.timeInterval = undefined;
   }
